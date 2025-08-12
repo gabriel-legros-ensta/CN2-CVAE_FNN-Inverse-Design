@@ -1,3 +1,7 @@
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
 saved_models/cvae_trained_2.pth filter=lfs diff=lfs merge=lfs -text
 data_augmented/y_data1_big.npy filter=lfs diff=lfs merge=lfs -text
 data_augmented/y_data1_bigger.npy filter=lfs diff=lfs merge=lfs -text
