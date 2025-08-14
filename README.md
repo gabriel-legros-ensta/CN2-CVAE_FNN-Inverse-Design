@@ -22,24 +22,16 @@
     - `cvae.py`
     - `encoder.py`
     - `decoder.py`
-    - feedforwardNN.py
-- **Feedforward_network/**
-    - `feedforward_model_trained_gpu_5000.pth`
-    - `feedforward_network_load.py`
-    - `feedforward_network_train.py`
-    - `feedforward_network_optimize_hyperparameters.py`
-    - `feedforward_network_model.py`
--  **GA**
-    - `approx_gauss.py`
-    - `balayage_k.py`
-    - `ga_evaluate.py`
-    - `ga_model.py`
-- **Inverse_design_network/tandem_network**
-    - `Ìnverse_network_model.py`
-    - `Tandem_network_train.py`
--  **results**
-    - `figures/`
-    - `result_param.txt`
+    - `feedforwardNN.py`
+- **saved_models/**
+    - `cvae_trained_2.pth`
+    - `ffn_big_trained.pth`
+    - `xgb_model.json`
+-  **utils**
+    - `dataload.py`
+    - `functions.py`
+    - `explore_data.ipynb`
+- `cvae_modeling.ipynb`
 
 ## PROJECT OVERVIEW 
 
