@@ -18,9 +18,11 @@
 ## STRUCTURE
 
 ### CN2-CVAE_FNN-Inverse-Design/
-- **EDA/**
-    - `load_data.py`
-    - `normalize_data.py`
+- **CVAE/**
+    - `cvae.py`
+    - `encoder.py`
+    - `decoder.py`
+    - feedforwardNN.py
 - **Feedforward_network/**
     - `feedforward_model_trained_gpu_5000.pth`
     - `feedforward_network_load.py`
