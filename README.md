@@ -11,14 +11,13 @@
 * [Project overview](#PROJECT-OVERVIEW)
 * [Getting started](#getting-started-on-your-machine)
 * [Models](#MODELS)
-    * [EDA](#i--EDA)
     * [Feedforward network](#ii--feedforward-model-ffn)
-    * [Genetic Algorithme](#iii--genetic-algorithm)
+    * [Conditional Variational AutoEncoder](#iii--CVAE)
 * [Contact](#Contact)
 
 ## STRUCTURE
 
-### inverse_design_silicon_photonic_devices/
+### CN2-CVAE_FNN-Inverse-Design/
 - **EDA/**
     - `load_data.py`
     - `normalize_data.py`
