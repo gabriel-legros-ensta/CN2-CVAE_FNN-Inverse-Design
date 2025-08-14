@@ -45,18 +45,15 @@ This project for nanophotonics design optimization involves developing a **FeedF
 ```
 pip install -r requirements.txt
 ```
-Once you have everything set up, you can run the project by executing the following command in your terminal with the desired values of **effective index** at a given **wavelength** in *nanometers* :
-```
-python3 main.py --n_desired {n_value} --wavelength_desired {wavelength_value}
-```
-If you want, you can also fix the value of the width (in nm) and/or the pitch (in nm), but those arguments are optionnal.
+Once you have everything set up, you can run the project by opening `cvae_modeling.ipynb`.
 
-For instance, you can run in your terminal: 
-```
-python3 main.py --n_desired 1.5 --wavelength_desired 1550 --fixed_w 430.0 -- fixed_pitch 300.0
-```
+Run the first cells **"Imports et chargement des données"**.
 
-Make sure your values are *floats*.
+Then in **"Génération synthétique automatique"**, define the desired values of effective index et frequency :
+
+`freq`
+`n_eff`
+
 
 ## MODELS
 
