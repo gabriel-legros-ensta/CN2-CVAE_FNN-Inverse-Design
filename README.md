@@ -27,6 +27,10 @@
     - `cvae_trained_2.pth`
     - `ffn_big_trained.pth`
     - `xgb_model.json`
+- **data_augmented/**
+   - `x_data1_bigger.npy` : SWG Waveguides parameters
+   - `y_data1_bigger.npy` : Spectra from FDTD simulations (1 peak)
+   - `label_data1_bigger.npy` : Effective indices and resonance frequencies
 -  **utils**
     - `dataload.py`
     - `functions.py`
