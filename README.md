@@ -50,8 +50,8 @@ Once you have everything set up, you can run the project by opening `cvae_modeli
 Run the first cells **"Imports et chargement des données"**.
 
 In **"Génération synthétique automatique"**, define the desired values of effective index and frequency, the errors. Then run `hybrid_model_evaluation()`:
-<img width="800" height="311" alt="image" src="https://github.com/user-attachments/assets/3152aa53-4433-4b0a-9c4a-2c08cff7c760" />
 
+<img width="798" height="273" alt="image" src="https://github.com/user-attachments/assets/79059d16-c74b-463a-99eb-a11ee49fec28" />
 
 ## MODELS
 
