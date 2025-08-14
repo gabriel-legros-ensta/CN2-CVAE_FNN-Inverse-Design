@@ -11,7 +11,7 @@
 * [Project overview](#PROJECT-OVERVIEW)
 * [Getting started](#getting-started-on-your-machine)
 * [Models](#MODELS)
-    * [Feedforward network](#ii--feedforward-model-ffn)
+    * [Feedforward Network](#ii--feedforward-model-ffn)
     * [Conditional Variational AutoEncoder](#iii--CVAE)
 * [Contact](#Contact)
 
@@ -35,7 +35,7 @@
 
 ## PROJECT OVERVIEW 
 
-This project for nanophotonics design optimization involves developing a **feedforward neural network** and a **genetic algorithm** to optimize the design of nanophotonics silicon subwavelength grating waveguide. This tool aims to predict and tune the design parameters of a waveguides to reach a specific refractive index at a given wavelength.
+This project for nanophotonics design optimization involves developing a **FeedForward Neural Network** and a **Conditional Variational Autoencoder** (CVAE) to optimize the design of silicon nanophotonic subwavelength grating waveguides. This tool aims to predict and adjust the waveguide design parameters to achieve a specific refractive index at a given wavelength.
 
 ## GETTING STARTED ON YOUR MACHINE
 
