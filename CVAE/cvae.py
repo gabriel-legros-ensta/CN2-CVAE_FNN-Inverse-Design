@@ -5,7 +5,6 @@ import torch.nn.functional as F
 from .encoder import Encoder
 from .decoder import Decoder
 from .feedforwardNN import FeedforwardNN
-from .classifieur import LatentClassifier
 
 class CVAEIntegrated(nn.Module):
     def __init__(self,
