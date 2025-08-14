@@ -1,0 +1,8 @@
+matplotlib
+numpy
+torch
+optuna
+pandas
+scipy
+scikit-learn
+umap-learn
