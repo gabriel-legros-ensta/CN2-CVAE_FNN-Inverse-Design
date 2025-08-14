@@ -55,18 +55,22 @@ In **"Génération synthétique automatique"**, define the desired values of eff
 
 ## MODELS
 
-This project includes a Feedforward Neural Network model that predicts the frequency spectrum of the electric field for a nanophotonic structure. The model takes four design parameters as inputs:
+This project implements a **Feedforward Neural Network (FNN)** designed to predict the **frequency spectrum** of the electric field for a nanophotonic structure.
 
-- **w** : Width of the waveguide
-- **DC** : Duty cycle
-- **Pitch** : Distance between adjacent elements
-- **k** : Wave vector (deduced from the value of n_desired and f_desired)
+The model takes **four design parameters** as input:
 
-<p align="center"><img src="images/1-SWGwaveguide.png" height="200"><p>
-<p align="center"><I>Silicon-on-insulator waveguide with a sub-wavelength grating etched longitudinally or transversely</I></p>
-The model is based on the idea that, using these four parameters, the network predicts 5000 values of the electric field spectrum, from which the resonance frequency and the effective refractive index of the structure can be derived.
+* **w** — Width of the waveguide
+* **DC** — Duty cycle
+* **Pitch** — Distance between adjacent elements
+* **k** — Wave vector (computed from `n_desired` and `f_desired`)
 
-However, the four parameters and the effective index are not directly linked. Using FDTD simulation, we predict the frequency spectrum of the waveguide based on these design parameters, and then obtain the effective index by extracting the resonance frequency and k. 
+Using these inputs, the network outputs **5,000 points** representing the electric field spectrum. From this spectrum, it is possible to extract the **resonance frequency** and the **effective refractive index** of the structure.
+
+Although the four input parameters and the effective index are not directly linked, the approach works as follows:
+
+1. **FDTD simulations** are performed using the given design parameters.
+2. The **frequency spectrum** of the waveguide is predicted.
+3. The **effective index** is then derived from the extracted resonance frequency and wave vector `k`.
 
 ### I- EDA
 Our dataset is made of the frequency spectrums for various combinations of design parameters, results of various FDTD simulations : 
