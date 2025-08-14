@@ -55,6 +55,16 @@ In **"Génération synthétique automatique"**, define the desired values of eff
 
 ## MODELS
 
+### I- EDA
+Our dataset is made of the frequency spectrums for various combinations of design parameters, results of various FDTD simulations : 
+In other words : 
+- X_data=[w,DC,pitch,k] -> 4 values corresponding to the four designs parameters 
+- y_data=[..,..,..] -> 5000 values of the electrical field for frequency values 
+
+First, we filter our data to keep only the frequency spectrums that shows one peak (|E|>0.01). We then normalize both x_data1_bigger and y_data1_bigger.
+
+### II- Feedforward model (FFN)
+
 This project implements a **Feedforward Neural Network (FNN)** designed to predict the **frequency spectrum** of the electric field for a nanophotonic structure.
 
 The model takes **four design parameters** as input:
@@ -66,23 +76,6 @@ The model takes **four design parameters** as input:
 
 Using these inputs, the network outputs **5,000 points** representing the electric field spectrum. From this spectrum, it is possible to extract the **resonance frequency** and the **effective refractive index** of the structure.
 
-Although the four input parameters and the effective index are not directly linked, the approach works as follows:
-
-1. **FDTD simulations** are performed using the given design parameters.
-2. The **frequency spectrum** of the waveguide is predicted.
-3. The **effective index** is then derived from the extracted resonance frequency and wave vector `k`.
-
-### I- EDA
-Our dataset is made of the frequency spectrums for various combinations of design parameters, results of various FDTD simulations : 
-In other words : 
-- X_data=[w,DC,pitch,k] -> 4 values corresponding to the four designs parameters 
-- y_data=[..,..,..] -> 5000 values of the electrical field for frequency values 
-
-First, we filter our data to keep only the frequency spectrums that shows one peak (|E|>0.01). We then normalize both x_data1_bigger and y_data1_bigger.
-
-### II- Feedforward model (FFN)
-
-...
 
 ### III- Conditional Variational AutoEncoder (CVAE)
 
